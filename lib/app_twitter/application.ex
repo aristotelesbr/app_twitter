@@ -10,6 +10,7 @@ defmodule AppTwitter.Application do
     children = [
       # Starts a worker by calling: AppTwitter.Worker.start_link(arg)
       # {AppTwitter.Worker, arg},
+      {AppTwitter.Scheduler, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
